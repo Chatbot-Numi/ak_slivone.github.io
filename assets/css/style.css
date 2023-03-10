@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #535252;
 }
 
@@ -23,7 +23,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -88,11 +88,28 @@ h6,
   letter-spacing: 2px;
 }
 
-#header .logo h1 a,
+#header .logo h1 a,{
+  font-weight: 500;
+  font-size: 16px;
+}
 #header .logo h1 a:hover {
+  font-weight: 500;
+  font-size: 16px;
   color: #535252;
   text-decoration: none;
 }
+
+#header .logo a,{
+  font-weight: 500;
+  font-size: 16px;
+}
+#header .logo a:hover {
+  font-weight: 500;
+  font-size: 16px;
+  color: #535252;
+  text-decoration: none;
+}
+
 
 #header .logo img {
   padding: 0;
@@ -345,50 +362,59 @@ h6,
 #hero {
   width: 100%;
   height: 100%;
-  background: #FFFF;
-  border-bottom: 0.5px solid #535252;
+  background: linear-gradient(180deg, #768CF7 0%, #4B5EBA 100%);
+  border-bottom: 0.5px solid 535252;
   margin: 72px 0 -72px 0;
 }
 
 #hero h1 {
-  margin: 0;
-  font-size: 48px;
+  margin-top: 50px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 56px;
+  color: #FFF9F8;
+  letter-spacing: 1px;
 }
 
 #hero h2 {
-  margin: 20px 0 0 0;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 76px;
+  color: #FFF9F8;
 }
 
 #hero h3 {
   margin: 20px 0 20px 0;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #FFF9F8;
 }
 
+.hero-peach {
+  font-weight: 500;
+  color: #FFCDB1;
+}
+
+
+
 #hero .btn-get-started {
-  font-size: 14px;
-  font-weight: 400;
-  color: #535252;
+  font-size: 16px;
+  font-weight: 500;
+  color: #468C7B;
   letter-spacing: 1px;
   display: inline-block;
-  margin: 20px 20px 0px 0px;
+  margin: 10px 10px 50px 0px;
   justify-content: safe center;
   align-items: center;
-  padding: 12px 18px;
+  padding: 4px 16px;
   background: #FFFFFF;
-  box-shadow: 0 10px 30px 0 rgba(70, 90, 144, 0);
-  border: 0.5px solid #535252;
-  border-radius: 0px 16px 16px 16px
+  background: #DFF7F0;
+  border-radius: 16px 16px 16px 16px
 }
 
 
 #hero iframe {
-  border-radius: 0px 16px 16px 16px
+  border-radius: 20px;
 }
 
 
@@ -533,8 +559,9 @@ section {
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 39px;
+  line-height: 48px;
+  font-weight: 400;
 }
 
 .breadcrumbs ol {
@@ -578,18 +605,20 @@ section {
 .about {
   width: 100%;
   background: #FFFF;
-  border-bottom: 0.5px solid #535252;
 }
 
 .about h1 {
-  margin: 20px 0 30px 0;
+  margin: 100px 0 30px 0;
   font-size: 40px;
   font-weight: 400;
+  font-weight: 600;
+  line-height: 48px;
+  color: #344054;
 }
 
 .about h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 5px;
   color: #7a6960;
 }
@@ -602,10 +631,23 @@ section {
 
 .about p {
   font-size: 15px;
+  color: #475467;
+}
+
+
+.odrazka{
+ margin-top: -10px;
+}
+
+
+.about-bold{
+  font-weight: 700;
+  font-size: 14,8px;
 }
 
 .about img{
-  border-radius: 0px 16px 16px 16px
+  border-radius: ;
+  max-height: 583px;
 }
 
 @media (max-width: 991px) {
@@ -640,19 +682,27 @@ section {
 
 .services {
   width: 100%;
-  background: #FFFF;
-  border-bottom: 0.5px solid #535252;
+  background: #F2F4FF;
 }
 
 
 .services h1 {  
+  margin: 100px 0 30px 0;
   font-size: 40px;
-  padding-bottom: 30px;
+  font-weight: 400;
+  font-weight: 600;
+  line-height: 48px
 }
 
 .services h4 {
+  font-weight: 500;
+  font-size: 18px;
 }
 
+.services img {
+  width: 1200px;
+  margin-bottom: -30px;
+}
 
 .services .icon-box {
   width: fit-content;
@@ -667,7 +717,6 @@ section {
   border-right: 10px;
   border-bottom: 10px;
   padding-bottom: 10px;
-  border: 0.5px solid #535252;
 }
 
 .services .icon-box:hover {
@@ -682,7 +731,7 @@ section {
 }
 
 .services .title {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0px;
   font-size: 18px;
 }
@@ -698,7 +747,7 @@ section {
 }
 
 .services .img-mobile {
-  width: 45%;
+  width: 50%;
 }
 
 
@@ -720,19 +769,27 @@ section {
 --------------------------------------------------------------*/
 .statements {
   width: 100%;
-  background: #FFFF;
+  background: #758BF5;
   border-bottom: 0.5px solid #535252;
+}
+
+.statements h1 {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 48px;
+  color: #FFFFFF;
 }
 
 .statements .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  margin: 0 0 40px 0;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  margin: 0 0 100px 0;
+  background: #F2F4FF;
+  box-shadow: 0px 10px 29px rgba(75, 94, 186, 0.7);
   transition: all 0.3s ease-in-out;
-  border-radius: 0px 16px 16px 16px;
+  border-radius: 20px 20px 20px 4px;
   text-align: center;
   border-bottom: 3px solid #FFFF;
   border: 0.5px solid #535252;
@@ -770,12 +827,19 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #F2F4FF;
   padding: 60px 0;
   background: #FFFF;
   border-bottom: 0.5px solid #535252;
 }
 
+.team h1 {
+  margin: 100px 0 30px 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-weight: 600;
+  line-height: 48px;
+}
 
 .team h3 {
   margin: 20px 0 20px 0;
@@ -785,12 +849,15 @@ section {
 }
 
 .team .member {
+  justify-content: center;
   text-align: center;
+  height: 150px;
+  width: 150px;
   margin-bottom: 20px;
   background: #8094F5;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 200px;
 }
 
 .team .member .member-info {
@@ -803,12 +870,13 @@ section {
   transition: 0.2s;
 }
 
-.team .member .member-info-content {
-  position: absolute;
-  left: 50px;
+.team .member-info-content {
+  position: relative;
+  left: 0px;
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
+  margin-bottom: 30px;
 }
 
 .team .member .member-info-content h4 {
@@ -818,11 +886,30 @@ section {
   color: #fff;
 }
 
-.team .member .member-info-content span {
-  font-style: italic;
+.team .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #535252;
+}
+
+.team .member-info-content span {
   display: block;
-  font-size: 13px;
-  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #535252;
+}
+
+.team .member-info-content a {
+  font-size: 20px;
+  transition: color 0.3s;
+  display: inline;
+  color: #535252;
+  margin-right: 15px;
+}
+
+.team .member-info-content a:hover {
+  color: #8094F5;
 }
 
 .team .member .social {
@@ -872,6 +959,15 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+
+.clients h1 {
+  margin: 100px 0 30px 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-weight: 600;
+  line-height: 48px;
+}
+
 
 .clients h3 {
   margin: 20px 0px 20px 0;
@@ -925,12 +1021,16 @@ section {
 --------------------------------------------------------------*/
 
 .portfolio {
-  width: 100%;
   background: #FFFFFF;
   border-bottom: 0.5px solid #535252;
 }
 
 .portfolio h1 {
+  margin-top: 80px;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 48px;
+  color: #000000;
 }
 
 .portfolio h3 {
@@ -941,13 +1041,13 @@ section {
 }
 
 .portfolio .snapwidget {
-  width: 100%;
-  height: 100vh;
+  height: 100%;
+  width: 100%
 }
 
 .portfolio iframe {
+  height: 100%;
   width: 100%;
-  height: 100vh;
 }
 
 
@@ -955,13 +1055,20 @@ section {
 # Newsletter
 --------------------------------------------------------------*/
 .newsletter {
-  background: #FFFF;
-  border-bottom: 0.5px solid #535252;
+  background: #FFCDB1;
+}
+
+.newsletter h1 {
+  margin: 100px 0 30px 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-weight: 600;
+  line-height: 48px;
 }
 
 .newsletter .footer-newsletter {
   padding: 0px 0;
-  background: #FFFF;
+  background: #FFCDB1;
   text-align: center;
   font-size: 15px;
 }
@@ -1211,19 +1318,18 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #FFFF;
+  background: #000000;
   padding: 0 0 30px 0;
-  color: #212529;
   font-size: 14px;
-  background: rgba(128, 148, 245, 0.25);
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #rgba(128, 148, 245, 0.25);
+  background: #FFCDB1;
   text-align: center;
   font-size: 15px;
 }
+
 
 #footer .footer-newsletter h4 {
   font-size: 24px;
@@ -1231,7 +1337,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #8094F5;
+  color: #0000;
 }
 
 #footer .footer-newsletter form {
@@ -1272,12 +1378,22 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #4B5EBA;
 }
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 39px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
 
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
@@ -1291,6 +1407,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
+  color: #FFFFFF;
 }
 
 #footer .footer-top h4 {
@@ -1303,6 +1420,15 @@ section {
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
+
+#footer .footer-top .footer-links h4 {
+  color: #FFFFFF
+}
+
+#footer .footer-top .footer-links p {
+  color: #FFFFFF
+}
+
 
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1341,7 +1467,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #8094F5;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1359,8 +1485,10 @@ section {
 }
 
 #footer .copyright {
-  text-align: center;
+  margin-top: 30px;
+  text-align: start;
   float: center;
+  color: #FFFFFF;
 }
 
 #footer .credits {
